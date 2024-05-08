@@ -14,7 +14,7 @@ const handler = async (m, { conn, usedPrefix, command, text }) => {
       return conn.reply(m.chat, '*لا يمكن الحصول على تفاصيل التطبيق*', m);
     }
 
-    let response = `💌 *اسم التطبيق:* ${data.name}\n📦 *الحزمة:* ${data.package}\n🕒 *آخر تحديث:* ${data.lastup}\n📥 *الحجم:* ${data.size}\n\n_إنضم لعائلة JITOSSA عبر الضغط على الرابط_\n`;
+    let response = `💌 *اسم التطبيق:* ${data.name}\n📦 *الحزمة:* ${data.package}\n🕒 *آخر تحديث:* ${data.lastup}\n📥 *الحجم:* ${data.size}\n\n_نتمنا ان نال اعجابكم بي بوتنا​​​​​​​​​​​​​🌚_\n`;
 
     if (data.size.includes('GB') || parseFloat(data.size.replace(' MB', '')) > 999) {
       return conn.reply(m.chat, '🚩 *الملف ثقيل جدًا*', m);
